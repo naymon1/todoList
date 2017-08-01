@@ -1,0 +1,74 @@
+<DOCTYPE>
+	<html>
+<head> <title>Todo List</title></head>
+
+		<script type="text/javascript">
+   
+          var task = document.getElementsById('addTask');
+          task.addEventListener('onclick', function ('e') {
+          	var task = getElementsById("addTask");
+
+          	todoList.setTodoList(inputTodoList.name);
+
+          	todoList.updateTask.todoList(todoList);
+          });
+            
+         //add todo list
+		var addTask = (function ("addTask") {
+			var task = 0;
+
+			return { 
+				setTask : function('t'){
+                   task = t;
+				},
+
+				updateTask : function('todoList'){
+                  todoList.setTodoList("this.setTask");
+				},
+			}
+		}) ();
+
+                //display todo list
+		var todoList = (function () {
+			var list = 0;
+			return{
+				getTodoList : function() {
+					return = list;
+				},
+
+				setTodoList : function("result") {
+					var list = result;
+				},
+			}
+		}) ();
+
+		</script>
+	<body>
+
+		<form id="addTask">
+			<center>
+				<h4>Todo list</h4>
+			<div id="todo">
+			<LABEL>Add Task</LABEL>
+			<input type="text" id="addTask" name="addTask" placeholder="Task"/>
+
+			<input type="submit" value="Add" onclick="add todo(form.addTask.value)">
+
+		</div>
+			</center>
+	</form>
+
+
+
+	<!--div id="todoList">
+
+		<div class="todo list">TASK LIST </div>
+		<ul ="todoList"> 
+
+		</ul>
+	</div -->
+
+
+
+	</body>
+	</html>
